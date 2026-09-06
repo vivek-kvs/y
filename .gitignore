@@ -1,0 +1,16 @@
+# Compiled executable
+y
+
+# Object files
+*.o
+
+# Build directory
+build/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
