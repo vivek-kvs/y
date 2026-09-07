@@ -1,4 +1,6 @@
 #include "y.h"
+#include "Scanner.h"
+#include "Token.h"
 
 #include <iostream>   // std::cout, std::cin, std::cerr
 #include <fstream>    // std::ifstream
@@ -41,6 +43,14 @@ void runPrompt(){
 
 // Run source code
 void run(const std::string& source){
+    Scanner scanner(source);
+
+    std::vector<Token> tokens = scanner.scanTokens();
+
+    // For now, just print the tokens.
+    for(Token& token: tokens){
+        std::cout << token.toString() << '\n';
+    }
 }
 
 // Error Handling

@@ -1,5 +1,5 @@
 y:
-	g++ -std=c++17 -Iheaders main.cpp src/y.cpp src/Token.cpp -o y
+	g++ -std=c++17 -Iheaders main.cpp src/y.cpp src/Token.cpp src/Scanner.cpp -o y
 
 clean:
 	rm -f y
